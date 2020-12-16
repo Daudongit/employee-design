@@ -114,13 +114,12 @@ nav.menu .main li.active a{
 nav.menu .main a{
     color: #adb6c0;
     text-decoration: none;
-    transition: all 0.5ms ease-in;
+    transition: all .5s;
 }
 
 nav.menu .main a:hover{
     color: #363636;
-    font-weight: bold;
-    /* transition: all 0.5ms ease-in; */
+    /* font-weight: bold; */
 }
 
 nav.menu .main a:active{
@@ -191,6 +190,7 @@ section.board .employee,.add-project .wrapper::after{
 
 .project .list li{
     padding: 10px;
+    margin-bottom: 5px;
     transition: background-color 1s;
 }
 
