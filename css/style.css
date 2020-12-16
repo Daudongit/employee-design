@@ -4,11 +4,23 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 62.5%;
+    width: 100%;
+}
+
+html body *{
+    font-family: 'Roboto', "Helvetica Neue", sans-serif;
+    font-style: normal;
+}
+
 body{
+    /* max-width: 135.2rem; */
     background-color: #F6F5F8;
     width: 100%;
-    padding: 100px;
+    padding: 100px 0px;
     position: relative;
+    overflow-x: hidden;
 }
 
 body::before {
@@ -37,9 +49,12 @@ body::after {
 }
 
 section.site{
+    max-width: 1100px;
     position: relative;
     z-index: 1;
-    width: auto;
+    width: 95%;
+    margin: auto;
+    /* width: auto; */
     background-color:#F6F5F8;
     /* border: 1px solid rgba(0, 0, 0, 0.1); */
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1), -5px -0px 5px rgba(0, 0, 0, 0.1);
@@ -155,6 +170,7 @@ section.board .employee,.add-project .wrapper::after{
     align-items: center;
     margin-left: 30px;
     margin-top: 20px;
+    font-size: 14px;
 }
 
 .project .all-employee img{
@@ -189,6 +205,7 @@ section.board .employee,.add-project .wrapper::after{
     align-items: center;
     color: #2c2c2c;
     font-weight: bold;
+    font-size: 14px;
 }
 
 .project .list li .icon{
@@ -198,7 +215,9 @@ section.board .employee,.add-project .wrapper::after{
 
 /* Add project */
 section.add-project{
-    width: auto;
+    /* width: auto; */
+    max-width: 1100px;
+    margin: auto;
 }
 
 section.add-project .wrapper .employee-foot{
@@ -260,7 +279,7 @@ section.add-project .wrapper .employee-foot a{
 }
 
 .employee .employee-list .item .profile .basic-info .name{
-    font-size: 15px;
+    font-size: 14px;
     color: #2f2f2f;
     font-weight: bold;   
 }
